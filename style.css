@@ -1,11 +1,13 @@
 body {
+    min-height: 100v;
     background-color: #45be91;
 }
+
 h1 {
     font-size: 50px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     text-align: center; 
-    color: rgb(78, 13, 23);
+    color: rgb(214, 12, 43);
     height: 30px;
 }
 
@@ -17,4 +19,13 @@ img[src="./Images/IMG_1622.jpeg"] {
     margin-left: auto;
     margin-right: auto;
     width: 150px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 25%;
+    background-color: #376765;
+    
 }

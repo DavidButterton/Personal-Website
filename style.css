@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100v;
     background-color: #45be91;
@@ -15,11 +19,13 @@ body {
     font-family: 'Tangerine', cursive;
     text-align: center; 
     color: rgb(214, 12, 43);
-    height: 30px;
     padding: 20px 20px;
     border: 5px black solid;
     margin: 5px 10px 5px 10px;
-    
+}
+
+.top-header:hover {
+    color: white;
 }
 
 img[src="./Images/IMG_1622.jpeg"] {
@@ -32,16 +38,33 @@ img[src="./Images/IMG_1622.jpeg"] {
     width: 150px;
 }
 
-.sidebar {
+.nav-sidebar {
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 25%;
     background-color: #376765;
     font-family: 'Londrina Solid', sans-serif;
+    border: 5px black solid;
+    margin: 5px 10px 5px 10px;
 }
 
-.navbar-items {
+.nav-sidebar_items {
     display:flex;
     flex-direction: column;
+}
+
+.nav-sidebar_item {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.nav-sidebar_item a:hover {
+    color: white;
+}
+
+.nav-sidebar_item a:active {
+    color: white;
 }

@@ -21,14 +21,16 @@ body {
     color: rgb(214, 12, 43);
     padding: 20px 20px;
     border: 5px black solid;
+    border-radius: 16px;
     margin: 5px 10px 5px 10px;
 }
 
 .top-header:hover {
     color: white;
+    border: 3px solid;
 }
 
-img[src="./Images/IMG_1622.jpeg"] {
+.nav-sidebar_img {
     border: 3px solid #143F14;
     border-radius: 40%;
     padding: 2px;
@@ -38,14 +40,22 @@ img[src="./Images/IMG_1622.jpeg"] {
     width: 150px;
 }
 
+.nav-sidebar_img:hover,
+.nav-sidebar_img:active {
+    border: 5px solid white;
+}
+
+
 .nav-sidebar {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 600px;
     width: 25%;
     background-color: #376765;
+    background: #376765;;
     font-family: 'Londrina Solid', sans-serif;
     border: 5px black solid;
+    border-radius: 16px;
     margin: 5px 10px 5px 10px;
 }
 
@@ -55,16 +65,17 @@ img[src="./Images/IMG_1622.jpeg"] {
 }
 
 .nav-sidebar_item {
-    text-decoration: none;
     font-weight: bold;
     display: block;
     padding: 10px;
 }
 
-.nav-sidebar_item a:hover {
-    color: white;
+.nav-sidebar_item a {
+    text-decoration: none;
 }
 
+.nav-sidebar_item a:hover,
 .nav-sidebar_item a:active {
     color: white;
+    border-bottom: 3px solid;
 }

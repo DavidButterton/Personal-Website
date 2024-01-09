@@ -9,21 +9,44 @@ body {
     margin: 0;
 }
 
+.background {
+    background: url("./Images/73E7A42D-2455-4455-A6DF-25D20BFDB690_1_105_c.jpeg") center/cover;
+    width: 100vw;
+    height:100vh;
+    position: fixed;
+    z-index: -5;
+}
+
 .top-header {
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction:row;
+    align-items:center;
     justify-content: center;
-    background: #376765;
+    background: linear-gradient(to left, rgba(10, 70, 70, .5) 90%, transparent ), url('Images/DFCB7C1E-7CA9-4707-B63E-692195B05B8F_1_105_c.jpeg')  bottom 10% center/cover;
     font-size: 50px; 
     font-family: 'Tangerine', cursive;
     text-align: center; 
     color: rgb(214, 12, 43);
-    padding: 20px 20px;
+    padding: 1.3rem;
     border: 5px black solid;
     border-radius: 16px;
-    margin: 5px 10px 5px 10px;
+    margin: 0px;
+    position:relative;
+    height: 300px;
 }
+
+.button_dark-mode {
+    position: absolute;
+    z-index: 1;
+    background: url("Images/dark-mode\ \(7\).png") center/cover;
+    height: 40px;
+    width: 40px;
+    top: 2%;
+    right: 2%;
+    border-radius: 50%;
+}
+
 
 .top-header:hover {
     color: white;
@@ -50,13 +73,14 @@ body {
     display: flex;
     flex-direction: column;
     height: 600px;
-    width: 25%;
+    width: 20%;
     background-color: #376765;
     background: #376765;;
     font-family: 'Londrina Solid', sans-serif;
     border: 5px black solid;
     border-radius: 16px;
     margin: 5px 10px 5px 10px;
+    position: relative;
 }
 
 .nav-sidebar_items {
@@ -78,4 +102,26 @@ body {
 .nav-sidebar_item a:active {
     color: white;
     border-bottom: 3px solid;
+}
+
+.comment-modal {
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    left: 20%;
+}
+
+.comment-modal_button {
+    background:rgba(128, 57, 199, 0.5) 20%;
+    color: white;
+    border: rgba(128, 57, 199, 0.5) 20%;
+}
+
+.comment-modal_button:hover,
+.comment-modal_button:active {
+    background: white;
+    color:#376765;
+    border-radius: 30%;
+    box-shadow: 5px 5px 5px 5px #45be91;
+
 }

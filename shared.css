@@ -23,7 +23,7 @@ body {
 .modal__comment-box {
     position: fixed;
     z-index: 200;
-    /* display: none; */
+    display: none;
     top:20%;
     left: 30%;
     background: white;

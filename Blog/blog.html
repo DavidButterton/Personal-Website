@@ -2,17 +2,25 @@
 <html lang="en">
     <head>
         <title>David Butterton Portfolio</title>
-        <link rel="stylesheet" href="./blog.css">
         <link rel="stylesheet" href="../shared.css">
-        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="./blog.css">
         <link rel="shortcut icon" href="../Images/Icons/torus.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="../shared.js" defer></script>
     </head>
     <body>
-        <div class="modal-backdrop"></div>
+        <div id="backdrop-modal" class="modal-backdrop"></div>
+        <div id="comment-box__modal" class="modal__comment-box">
+            <h1 class="modal__title">Please Leave A Comment</h1>
+            <form class="modal__submit-form">
+                <textarea type="text" class="modal__comment-textfield"></textarea> 
+                <button type="submit" class="modal__submit-button">Submit</button>
+            </form>
+        </div>
         <header>
             <div >
-                <h1 class="top-header"> David Butterton   <button>Dark mode</button></h1>
+                <h1 class="top-header"> Random quote/affirmations generator </h1>
+                <button type='click' class="button_dark-mode"></button>
            </div>   
         </header>
        
@@ -43,6 +51,8 @@
                             <a href="../Contact/contact.html">Contact</a>
                         </li>
                     </ul>
+                    <div class="comment-modal">
+                        <button id="comment-button" class="comment-modal_button">Comment</button>
                 </nav>
             </nav>
             <main>

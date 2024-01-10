@@ -52,6 +52,8 @@ body {
     height: 400px;
     border: 2px solid #143F14;
     border-radius: 10%;
+    padding: 2rem;
+    font-size: 1.2rem;
 }
 
 .modal__submit-button {
@@ -59,6 +61,14 @@ body {
     background-color: #45be91;
     border:#143F14;
     border-radius: 10%;
+}
+
+.modal__submit-button:hover,
+.modal__submit-button:active {
+    background: white;
+    color:#143F14;
+    border: 10px solid #143F14;
+    box-shadow: 2px 2px 2px 2px #45be91;
 }
 
 .background {

@@ -57,7 +57,7 @@ body {
 }
 
 .modal__submit-button {
-    margin: 0 5rem;
+    margin: .2rem 5rem;
     background-color: #45be91;
     border:#143F14;
     border-radius: 10%;

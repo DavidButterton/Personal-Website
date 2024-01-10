@@ -13,3 +13,10 @@ commentCancelButton.addEventListener('click', () => {
     backdropModal.style.display = 'None';
     commentBoxModal.style.display = 'None';
 })
+
+backdropModal.addEventListener('click', closeModal);
+
+function closeModal(e) {
+    backdropModal.style.display = 'None';
+    commentBoxModal.style.display = 'None';
+}

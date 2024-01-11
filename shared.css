@@ -79,6 +79,31 @@ body {
     z-index: -5;
 }
 
+.toggle-button__sideNav {
+    position: absolute;
+    bottom: 5%;
+    left:2%;
+    width: 3rem;
+    background: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.toggle-button__sideNav:focus {
+    outline: none;
+}
+
+.toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: red;
+    margin: 0.6rem 0;
+    display:block;
+}
+
 .top-header {
     box-sizing: border-box;
     display: flex;
@@ -96,6 +121,12 @@ body {
     margin: 0px;
     position:relative;
     height: 300px;
+}
+
+.affirmation-header {
+    text-align: center;
+    width: 50%;
+    font-size: 1.5rem;
 }
 
 .button_dark-mode {
@@ -132,7 +163,7 @@ body {
 
 
 .nav-sidebar {
-    display: flex;
+    display: None;
     flex-direction: column;
     height: 600px;
     width: 20%;
